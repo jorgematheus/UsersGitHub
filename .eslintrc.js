@@ -11,6 +11,7 @@ module.exports = {
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
+    __DEV__: 'readonly'
   },
   parser: 'babel-eslint', //entender os codigos ES6,
   parserOptions: {
@@ -22,7 +23,7 @@ module.exports = {
   },
   plugins: [
     'react',
-    'plugins'
+    'prettier'
   ],
   rules: {
     'prettier/prettier': 'error',
